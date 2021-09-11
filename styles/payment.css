@@ -1,76 +1,64 @@
-body{
-    margin: 0px;
-    padding: 0px;
+#hotel-details {
+  background-color: rgb(132, 136, 139);
+  width: 60%;
+  height: 20%;
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
 }
-#container{
-    margin: 0px;
-    padding: 0px;
+#payment-container {
+  margin-top:7%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-#image_logo{
-    height: 60px;
-    width: 60px;
+.hotel-image {
+  max-height: 300px;
+  max-width: 270px;
 }
-#image_hotel{
-    height: 500px;
-    width: 500px;
+#customer-payment-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  border: black 1px solid;
+  border-radius: 5px;
+  margin: 0% 2%;
+  background-color: rosybrown;
 }
-.social_image{
-    height: 20px;
-    width: 22px;;
-}
-
-.hotel{
-    background-color: rgb(132,136,139);
-    height: 20%;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.hotel1{
-    margin: 2%;
-}
-.hotel2{
-    margin: 2%;
-    border: 1px solid black;
-    padding: 1% 2%;
-    border-radius: 5px;
-}
-
-
-
-
-#radisson {
-    height: 500px;
-    width: 500px;
+@media screen and (max-width: 576px) {
+  #hotel-details {
+      width: 100%;
+      flex-direction: column;
+      padding-top: 10px;
   }
-  #hoteldis{
-    background-color: rgb(132,136,139);
-    width: 50%;
-    height: 20%;
-    
-    margin-top: 2%;
-    margin-bottom: 2%;
-   
-    
-    
+
+  #payment-container {
+      margin-top: 20%;
+      margin-bottom: 20%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
   }
-  #hotel3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
+
+  #pay-now{
+      align-self: center;
   }
-  #tariff{
-    margin: 2%;
-    padding: 1% 0 0 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+
+  #customer-payment-details {
+      align-items: normal;
+      flex-direction: column;
+      padding: 15px;
   }
-  
-  
-  
-  #cust{
-    margin: 2%;
+
+  .hotel-name-rating {
+      text-align: center;
   }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #hotel-details {
+      width: 80%;
+      margin: 5% auto;
+  }
+}
 

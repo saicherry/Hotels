@@ -1,113 +1,101 @@
-/* body{
-    margin: 0px;
-    padding: 0px;
-} */
-#container{
-    margin: 0px;
-
-    padding: 0px;
+#slideshow-container, #booking-form {
+  padding: 1%;
+  text-align: center;
+  border: 1px solid black;
+  max-height: 400px;
 }
-#image_logo{
-    height: 60px;
-    width: 60px;
+#slideshow-container {
+  margin-left: 2%;
+  border-right: none;
+  flex-grow: 3;
+  max-width: 60%;
 }
-#image_hotel{
-    height: 500px;
-    width: 500px;
+#booking-form {
+  margin-right: 2%;
+  flex-grow: 1;
 }
-.social_icons{
-    height: 20px;
-    width: 22px;
+#hotel-description {
+  margin: 2%;
 }
-.content{
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+#detail-container {
+  margin-top:7%;
+  margin-bottom: 7%;
 }
-
-
-
-
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
+#slideshow-booking {
+  display: flex;
+  justify-content: start;
+  align-content: center;
 }
-header{
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 100%;
+.slider-image {
+  max-height: 350px;
 }
-header a{
-    text-decoration: none;
-    color: black;
-    padding-right: 15px;
+.outer {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
 }
-footer{
-    background-color: rosybrown;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0%;
+#book-now {
+  margin-top: 5%;
 }
-#contact{
-    position: absolute;
-    top: 30%;
-    left: 1%;
+.inner {
+  width: 60%;
 }
-#mid{
-    position: absolute;
-    top: 30%;
-    right: 1%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 100px;
+width: 100px;
+background-image: none;
 }
-footer a{
-    text-decoration: none;
-    color: black;
-}
-#copy_right{
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-size: 10px;
-}
-#content_top{
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;    
-}
-#content_mid{
-    margin-bottom: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-#content_last{
-    margin-bottom: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 1%;
+.carousel-control-next-icon:after
+{
+content: '>';
+font-size: 55px;
+color: black;
 }
 
-
-
-#radisson{
-    height: 500px;
-    width: 500px;
-}
-.radimg{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
-
+.carousel-control-prev-icon:after {
+content: '<';
+font-size: 55px;
+color: black;
 }
 
-#dis{
-    margin-top: 1%;
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0;
 }
+.carousel-image {
+  max-height: 370px;
+}
+
+@media screen and (max-width: 576px) {
+
+  #slideshow-container {
+      margin-left: 0%;
+      max-width: 100%;
+      border-right: 1px solid black;
+  }
+
+  #booking-form {
+      width: 100%;
+  }
+
+  #detail-container {
+      margin-top: 20%;
+      margin-bottom: 22%;
+  }
+
+  #slideshow-booking {
+      flex-direction: column;
+  }
+
+  .slider-image {
+      max-height: 250px;
+      width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #detail-container {
+      margin-top: 10%;
+  }
+}
+

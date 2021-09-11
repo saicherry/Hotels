@@ -1,80 +1,55 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
     <head>
+        <meta content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>List</title>
-        <link rel="stylesheet" href="styles/list.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/index.css">
+
+        <!-- Import CSS -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/loader.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/list.css"> 
     </head>
-    <body>  
+    <body>
+        <div id="loader"></div>
+        <div class="main-container">    
+            <!-- Added the header elements: Logo and Login Button -->
+            <header class="header-footer" id="header"></header>
 
-        <header>
-            <a href="index.html"><img src="assests/images/logo.png" height="60px" width="60px" alt="logo"/></a>
-            <a href="login.html">Login</a>
-        </header>
-        
-        
-            <br>
+            <!-- Added the main body content: List view of hotel with details and map view div -->
 
-            <p style="text-align:center;">
-                <a href="#list-view" style="color:black;"><strong>List View </strong></a>
-    
-                <a href="#map-view" style="color:black;"><strong>Map View</strong></a>
-            </p>
-
-                <div class="view">
-                    <a class="list_view" href="#list"><strong>List View</strong></a>
-                    <a class="map_view" href="#map_view"><strong>Map View</strong></a> 
-                </div>            
-            
-           
-                <div id="list">
-                    <div id="first_hotel">
-                        <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="200px" width="250px"/>
-                        <h3>Radisson Blu Hotel</h3>
-                        <p>5 Star</p>
-                        <p>New Delhi</p></a>
-            </div>
-            <div id="map_view">
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
-                <p>MAPVIEW</p>
-            </div>
-            <div id="second_hotel">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="200px" width="250px"/>
-                <h3>The Lalit New Delhi</h3>
-                <p>4.5 Star</p>
-                <p>New Delhi</p>
+            <div id="list-container">
+                <!-- Added nav pills/tabs for list view and map view using bootstrap --> 
+                <ul class="nav nav-pills" id="pills-tab">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#map-view">Map View</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tab-content">
+                    <div id="list-view" class="tab-pane fade show active">
+                        <div id="hotel-list"></div>
+                    </div>
+                    <div id="map-view" class="tab-pane fade">
+                        <div id="map"></div>
+                    </div>
                 </div>
-                <div id="third_hotel">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" height="200px" width="250px"/>
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
-                </div>
-            </div>
-        
-        <section>
-            <div id="map_view">
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="mapview"/>
-                <p>MAP VIEW</p>
-            </div>
+            </div>                    
 
-        </section>
-        </article>
-        <footer>
-            <div id="contact">
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <div id="mid">
-                <a href="https://www.facebook.com" target="_blank"><img src="/assests/images/facebook.png" height="20px" width="22px"/></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px"/></a>
-                <a href="https://twitter.com" target="_blank"><img src="/assests/images/twitter.png" height="20px" width="22px"/></a>
-            </div>
-            <div id="copy_right">
-                <p> © 2020 ROOM SEARCH PVT. LTD. </p>
-            </div>
-        </footer>
+            <!-- Added the footer elements: Contact Us Button, Social Media Links -->
+            <footer class="header-footer" id="footer"></footer>
+        </div>
+
+        <script src="scripts/common.js"></script>
+        <script src="scripts/list.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR_GOOGLE_API_KEY>"></script>
     </body>
 </html>

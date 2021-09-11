@@ -1,56 +1,57 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
     <head>
+        <meta content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Payment</title>
-        <link rel="stylesheet" href="styles/payment.css">
-        <link rel="stylesheet" href="styles/list.css">
-        <link rel="stylesheet" href="styles/common.css">
-     
+        
+        <!-- Import CSS -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/loader.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/payment.css"> 
     </head>
-    <body>  
-
-        <header>
-            <a href="index.html"><img src="assests/images/logo.png" height="60px" width="60px" alt="logo"/></a>
-            <a href="login.html">Login</a>
-        </header>
-        <section>
-            <div class="hotel">
-            <img id="image_hotel" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
-            <h3>Radisson Blu Hotel</h4>
-            <p>#38 of 1,289 hotels in New Delhi</p>
-            <p>National Highway 8, New Delhi 110017 India</p>
+    <body>
+        <div id="loader"></div>
+        <div class="main-container"> 
+            <!-- Added the header elements: Logo and Login Button -->
+            <header class="header-footer" id="header"></header>
+            
+            <!-- Added the main body elements: Hotel Details(wih image of hotel), Customer Details and Payment Details -->
+            <div id="payment-container">
+                <div id="hotel-details">
+                    <img class="hotel-image" id="hotel-image" alt="hotel-image"> 
+                    <div class="hotel-name-rating">
+                        <h2 id="hotel-name"></h2>
+                        <p id="ranking"></p>
+                        <p id="address"></p>
+                    </div>
+                </div>
+                <div id="customer-payment-details">
+                    <div id="customer-details">
+                        <p id="name"></p> 
+                        <p id="adult"></p>
+                        <p id="from-date"></p>
+                        <p id="to-date"></p>
+                    </div>
+                    <div id="payment-details">
+                        <p id="tariff"></p>
+                        <p id="amount"></p>
+                    </div>
+                    <a href="#" id="pay-now">
+                        <button id="pay-now-button" type="button" class="btn btn-success" onclick="payNow(event)">Pay Now</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Added the footer elements: Contact Us Button, Social Media Links -->
+            <footer class="header-footer" id="footer"></footer>
         </div>
-        <div>
 
-            <article class="hotel1">
-                <p><strong>Name: </strong> John Doe</p>
-                <p><strong>Number of Adults: </strong>2</p>
-                <p><strong>Check-in Date: </strong>06/06/2020</p>
-                <p><strong>Check-out Date: </strong>08/06/2020</p>
-            </article>
-            <article class="hotel2">
-                <p><strong>Tarrif Breakdown: </strong>Rs.1000 * 2 Adults * 5 Nights</p>
-                <p><strong>Total: </strong>Rs. 10000</p>   
-            </article>
-            <a href="#">Pay Now</a>
-        </div>
-        </section>
-
-        <br><br><br>
-        <footer>
-            <div id="contact">
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <div id="mid">
-                <a href="https://www.facebook.com" target="_blank"><img src="/assests/images/facebook.png" height="20px" width="22px"/></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="/assests/images/instagram.png" height="20px" width="22px"/></a>
-                <a href="https://twitter.com" target="_blank"><img src="/assests/images/twitter.png" height="20px" width="22px"/></a>
-            </div>
-            <div id="copy_right">
-                <p> © 2020 ROOM SEARCH PVT. LTD. </p>
-            </div>
-        </footer>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/payment.js"></script>
     </body>
 </html>
