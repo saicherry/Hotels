@@ -40,5 +40,37 @@ body{
 
 
 
-
+#radisson {
+    height: 500px;
+    width: 500px;
+  }
+  #hoteldis{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+    
+    
+  }
+  #hotel3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #tariff{
+    margin: 2%;
+    padding: 1% 0 0 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  
+  
+  #cust{
+    margin: 2%;
+  }
 
