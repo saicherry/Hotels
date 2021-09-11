@@ -1,12 +1,11 @@
-div{
-    height: 70px;
+.loader{
     width: 70px;
+    height: 70px;
+    border-radius: 50%; 
     border: 12px solid #f3f3f3;
-    border-radius: 50%;
-    border-top-color: #444444;
-    margin:0 auto;
-    margin:auto;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    border-top: 12px solid #444444;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0px 0px -50px;
 }
-

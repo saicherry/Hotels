@@ -1,4 +1,4 @@
-body{
+/* body{
     
     margin: 0;
     padding: 0;
@@ -31,6 +31,10 @@ footer{
     border-radius: 25%;
     
 }
+
+
+
+
 #city_card{
    /* text-align: center;
     margin-left: 15%;
@@ -39,6 +43,10 @@ footer{
     justify-content: space-evenly;
     padding: 4% 0%;
 }
+
+
+
+
 .image_dimensions{
     height: 150px;
     width: 150px;
@@ -48,3 +56,128 @@ footer{
     height: 20px;
      width: 22px;
 }
+
+#search-bar {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+  }
+  #search-input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  #search-input:focus {
+    outline: none;
+  }
+
+ */
+
+
+
+
+
+  
+  body{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+footer{
+    background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+#contact{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+#mid{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+#copy_right{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+#content{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-position: center;
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search_box{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px solid transparent;
+    color: #f1f1f1;
+    border-radius: 12px;
+    width: 30%;
+    height: 10%;
+}
+input::placeholder{
+    padding: 10px;
+    font-size: 16px;
+}
+#content_middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 4%;
+}
+div img{
+    border-radius: 25%;
+}
+#view_more{
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+section div a{
+    text-decoration: none;
+    color: black;
+} 
+
+
+*/
+
