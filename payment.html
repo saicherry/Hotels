@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Payment</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
-</head>
-<body>
-    <div>
-        <div class="header">
-            <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="200px" width="150px"></a>
+    <head>
+        <title>Payment</title>
+     <link rel="stylesheet" href="styles/payment.css">
+    </head>
+    <body>
+       <div id="container">
+        <header>
+            <a href="index.html">
+                <img id="image_logo" src="assests/images/logo.png" alt="logo">
+            </a>
+            <a href="login.html">Login</a>
             
-            <a href="login.html"><span>Login</span></a>
-        </div>  
-        <div class="content">
+        </header>
+        <section>
             <div>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="1100px" width="1100px">
-            </br>
-    
-                <h2>Redisson Blu Hotel</h2>
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8,New Delhi 110017 Indian</p>
-            </div>
-            <div>
-                <span>
-                    Name:John Doe
-                </br>
-                    Number of Adults:2
-                </br>
-                Check-in-Date:06/06/2020
-            </br>
-            Check-out-Date:08/06/2020
-                </span>
-            </div>
-            <div>
-                <p>
-                    Tariff Breakdown:Rs. 1000x2 Adultsx5 Nights
-                </br>
-                Total Amount:Rs.10000
-                </p>
-            </div>
-            <div>
-                <a href="payment.html"><span>Pay Now</span></a>
-            </div>
+            <img id="image_hotel" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="">
+            <h3>Radisson Blu Hotel</h4>
+            <p>#38 of 1,289 hotels in New Delhi</p>
+            <p>National Highway 8, New Delhi 110017 India</p>
         </div>
-        <div class="footer">
+        <div>
+            <p><strong>Name: </strong> John Doe</p>
+            <p><strong>Number of Adults: </strong>2</p>
+            <p><strong>Check-in Date: </strong>06/06/2020</p>
+            <p><strong>Check-out Date: </strong>08/06/2020</p>
+            <p><strong>Tarrif Breakdown: </strong>Rs.1000 * 2 Adults * 5 Nights</p>
+            <p><strong>Total: </strong>Rs. 10000</p>
+            <a href="#">Pay Now</a>
+        </div>
+        </section>
+        <footer>
             <a href="contact.html">Contact Us</a>
-            <br />
-            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social-media-icons" height="20px" width="22px"/></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social-media-icons" height="20px" width="22px"/></a>
-            <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social-media-icons" height="20px" width="22px"/></a>
-
-            <div>© 2020 ROOM SEARCH PVT. LTD.</div>   
-        </div>  
-    </div>
-</body>
+            <div>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social_image" src="assests/images/facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social_image" src="assests/images/instagram.png" alt="">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img class="social_image" src="assests/images/twitter.png" alt="">
+                </a>
+            </div>
+            <div>
+                © 2020 ROOM SEARCH PVT. LTD.
+            </div>
+        </footer>
+       </div>
+    </body>
 </html>
